@@ -1,7 +1,7 @@
 class User {
   constructor(id) {
     this.id = id;
-    this.getPermissions = () => {
+    this.getPermissions = () {
       return "public:read";
     };
   }
