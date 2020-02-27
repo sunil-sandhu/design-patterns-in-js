@@ -43,9 +43,14 @@ const createIterator = (collection) => {
   }
 };
 
-const testArray = [
-  { something: "yay", other: 123 },
-  { something: "test", other: 456 }
+const contacts = [
+  { name: "Sunil", email: "sunil@email.com" },
+  { name: "Jimmy", email: "jimmy@email.com" },
+  { name: "Ilaria", email: "ilaria@email.com" },
+  { name: "Jade", email: "jade@email.com" },
+  { name: "Laura", email: "laura@email.com" },
+  { name: "Bruce", email: "bruce@email.com" }
 ];
-const myTestIterator = createIterator(testArray);
-console.log(myTestIterator);
+
+const contactsIterator = createIterator(contacts);
+console.log(contactsIterator);
