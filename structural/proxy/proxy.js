@@ -34,13 +34,6 @@ class GeoProxy {
     }
     return this.geocache[address];
   }
-  getCount() {
-    let count = 0;
-    for (var code in this.geocache) {
-      count++;
-    }
-    return count;
-  }
 }
 
 const geo = new GeoProxy();
