@@ -26,7 +26,7 @@ function pubSub() {
   };
 }
 
-const fields = {
+const payload = {
   name: "Sunil",
   message: "Hey friend!"
 };
@@ -42,4 +42,4 @@ let subscription = pubsub.subscribe("notifications", (data) => {
   subscription.dispose();
 });
 
-pubsub.publish("notifications", fields);
+pubsub.publish("notifications", payload);
